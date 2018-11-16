@@ -1,0 +1,163 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha36.1.dtd" >
+   <PATCH nodename="C:\Work\vvvv-private\public-vl\VL.Skia\examples\8_Images\FromSkia.v4p" systemname="FromSkia-ToDX" filename="C:\Work\vvvv-private\public-vl\VL.Skia\examples\8_Images\FromSkia-ToDX.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4335" top="255" width="9675" height="8490">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="2985" top="6960" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2985" top="6960" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13860" top="1890" width="6390" height="4950">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="2700" top="1845" width="975" height="510">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2700" top="1845" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Beautiful&cr;&lf;text.|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="[text]">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="5">
+   <BOUNDS type="Node" left="4920" top="2940" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4920" top="2940" width="2025" height="735">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Skia renders the string offscreen and returns it as a VL Image.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="7">
+   <BOUNDS type="Node" left="4935" top="3960" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4935" top="3960" width="2475" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; The Image is then uploaded straight to the graphic card.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Info (EX9.Texture)" nodename="Info (EX9.Texture)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="1305" top="4935" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="1095" top="5535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Uniform Scale" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitIn">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Width" dstnodeid="13" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Height" dstnodeid="13" dstpinname="Aspect Height">
+   </LINK>
+   <NODE systemname="Quad (DX9)" filename="" nodename="Quad (DX9)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2985" top="6330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2985" top="6330">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="UploadImage (EX9.Texture)" filename="..\..\..\VL.CoreLib.VVVV\vvvv\nodes\plugins\VL.CoreLib.VVVV.dll" nodename="UploadImage (EX9.Texture)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3315" top="3975" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3315" top="3975" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Do Upload" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Status" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="12" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="3" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Skia (String)" filename="C:\Work\vvvv-private\public-vl\VL.Skia\examples\8_Images\vl\VVVV.String.Skia.vl" nodename="SkiaText (String)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="3315" top="2925" width="945" height="270">
+   </BOUNDS>
+   <PIN pinname="Has Changed" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="23" dstpinname="Text">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Result" dstnodeid="9" dstpinname="Data">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="4965" top="4905" width="3600" height="480">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4965" top="4905" width="3570" height="525">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|In this example the DX9 pipeline is used.&cr;&lf;The same UploadImage node exists for the DX11.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="25">
+   <BOUNDS type="Node" left="660" top="330" width="4185" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="660" top="330" width="4980" height="810">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Rendering text in VL (via Skia) and using it in the DX9/11.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Has Changed" dstnodeid="9" dstpinname="Do Upload">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="BtzZLv2fmo0P8NklU3ybrC" Version="0.93">
+  <Patch Id="SK6ocMuRek6PbqD6rZBELR">
+    <Canvas Id="VQbDhkoieZZLfwGw8UnfvL" DefaultCategory="Main" CanvasType="FullCategory" />
+  </Patch>
+  <NugetDependency Id="FxhmSuJL6KDMToiP5oQMik" Location="VL.Core" Version="0.93.21-g99c25bebaf" />
+  <NugetDependency Id="UchhPVzlF3yLYZisdOQYdP" Location="VL.CoreLib" Version="0.93.21-g99c25bebaf" />
+  <NugetDependency Id="SYpjGF1TdHJPzittw0OMRf" Location="VL.CoreLib.VVVV" Version="0.93.21-g99c25bebaf" />
+  <NugetDependency Id="NfMc81IbmnwMkGIoGsIoXq" Location="VL.Skia" Version="0.93.22-g20b1dd0a01" />
+</Document>
