@@ -14,7 +14,7 @@
         </p:NodeReference>
         <Patch Id="TvWlZIZlejxOiDvBNTqpro">
           <Canvas Id="GMK137wHZRlN0FFI4KWQAG" CanvasType="Group">
-            <Node Bounds="252,760,85,13" Id="KDBwoZPdQEpOsjCzPN4R9h">
+            <Node Bounds="296,282,85,13" Id="KDBwoZPdQEpOsjCzPN4R9h">
               <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -30,7 +30,7 @@
               <Pin Id="LEVNzL6M7mKNhxz6i4UJ5F" Name="Enabled" Kind="InputPin" />
               <Pin Id="C4fAqdRNWF4OyKuzjQ9s68" Name="Form" Kind="OutputPin" />
             </Node>
-            <Node Bounds="77,717,180,13" Id="IGhGbsvnqr4P5FxqDA2qwC">
+            <Node Bounds="121,239,180,13" Id="IGhGbsvnqr4P5FxqDA2qwC">
               <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="NOC_I_1_RandomWalkTraditional.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="NOC_I_1_RandomWalkTraditional" />
@@ -38,7 +38,7 @@
               <Pin Id="HEDJxuIyrjuMpVOX7iervI" Name="Reset" Kind="InputPin" />
               <Pin Id="J3d3H5vVjBRPa6rKLwTOOe" Name="Layer" Kind="OutputPin" />
             </Node>
-            <Node Bounds="272,717,209,13" Id="BG4tznKUxdYNoUJ7ZT9gWJ">
+            <Node Bounds="316,239,209,13" Id="BG4tznKUxdYNoUJ7ZT9gWJ">
               <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="NOC_I_1_RandomWalkTraditional.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="NOC_I_1_RandomWalkTraditional_Multi" />
@@ -47,7 +47,7 @@
               <Pin Id="DwLy68DFzWZO5sidoYfqR2" Name="Reset" Kind="InputPin" />
               <Pin Id="ExCO6Kp0ifTNH1wJPJHd7c" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="LnoOlJ8WuWKLdJUNfmWJyV" Comment="Emit" Bounds="274,679,40,18" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="LnoOlJ8WuWKLdJUNfmWJyV" Comment="Emit" Bounds="318,201,40,19" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -55,7 +55,7 @@
                 <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="HY38ZCGdbu7M1XiiPYqusS" Comment="Reset" Bounds="478,681,40,18" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="HY38ZCGdbu7M1XiiPYqusS" Comment="Reset" Bounds="522,203,40,19" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -63,7 +63,7 @@
                 <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="F6HqKcbGgmXPy03c0JJBZ8" Comment="Reset" Bounds="79,682,40,18" ShowValueBox="true" isIOBox="true" Value="false">
+            <Pad Id="F6HqKcbGgmXPy03c0JJBZ8" Comment="Reset" Bounds="123,204,40,19" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -91,7 +91,7 @@
     ************************ Walker ************************
 
 -->
-      <Node Name="Walker" Bounds="498,200" Id="NB4im1awzGAP9rTYUIOzxj">
+      <Node Name="Walker" Bounds="358,208" Id="NB4im1awzGAP9rTYUIOzxj">
         <p:NodeReference>
           <Choice Kind="ClassDefinition" Name="Class" />
           <FullNameCategoryReference ID="Primitive" />
@@ -566,7 +566,7 @@
             </Node>
             <ControlPoint Id="DTR4oev2hiGMtAQ53fBzRY" Bounds="404,236" />
             <ControlPoint Id="JJQvfO7x7sELAtqtR99gQ7" Bounds="353,236" />
-            <Node Bounds="712,468,107,131" Id="VssB3osi9WUPIAACqszm22">
+            <Node Bounds="592,443,107,131" Id="VssB3osi9WUPIAACqszm22">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="Repeat" />
@@ -575,10 +575,10 @@
               <Pin Id="QsuHLDCSJC9MYo7QesnyEQ" Name="Iteration Count" Kind="InputPin" />
               <Pin Id="Sb2sKzsMdmaOLNlLWRDjGu" Name="Break" Kind="OutputPin" />
               <Patch Id="Rmi8YAmr6FlPTDBMg1oBi8" ManuallySortedPins="true">
-                <Patch Id="LPywk3On7OyLSCGzxNOuTF" Name="Create" ParticipatingElements="BQSkwPY8jlCPPF5RLkOZ6l" ManuallySortedPins="true" />
+                <Patch Id="LPywk3On7OyLSCGzxNOuTF" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="KNJb8Jpi770NcyvtYOvFVJ" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="ONbHeGK192BNRcRScz0SAw" Name="Dispose" ManuallySortedPins="true" />
-                <Node Bounds="752,491,55,22" Id="BQSkwPY8jlCPPF5RLkOZ6l">
+                <Node Bounds="632,466,55,22" Id="BQSkwPY8jlCPPF5RLkOZ6l">
                   <p:NodeReference LastCategoryFullName="Main.Walker" LastSymbolSource="NOC_I_1_RandomWalkTraditional.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="Walker" />
@@ -586,7 +586,7 @@
                   </p:NodeReference>
                   <Pin Id="HQd3ramq5FYNXHXHoCQNjZ" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Node Bounds="724,530,33,22" Id="HDF2p4HH5H1PszMqvGjLgg">
+                <Node Bounds="604,505,33,22" Id="HDF2p4HH5H1PszMqvGjLgg">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Add" />
@@ -597,46 +597,16 @@
                   <Pin Id="SeImUsUYesoOSu1OzryzHw" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="SzMlILVSUZQMD9rf27pqMY" Bounds="727,593" Alignment="Bottom" />
-              <ControlPoint Id="KqckHAYxeZEPOC4FqonQSA" Bounds="727,474" Alignment="Top" />
+              <ControlPoint Id="SzMlILVSUZQMD9rf27pqMY" Bounds="607,568" Alignment="Bottom" />
+              <ControlPoint Id="KqckHAYxeZEPOC4FqonQSA" Bounds="607,449" Alignment="Top" />
             </Node>
-            <Pad Id="IpYKXHHsv8XNSN9hIwgyu4" Comment="Iteration Count" Bounds="712,448,20,20" ShowValueBox="true" isIOBox="true" Value="5">
+            <Pad Id="IpYKXHHsv8XNSN9hIwgyu4" Comment="Iteration Count" Bounds="594,425,24,20" ShowValueBox="true" isIOBox="true" Value="5">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="569,538,55,22" Id="HcwWCsvlvPcQOYTmZc2W08">
-              <p:NodeReference LastCategoryFullName="Main.Walker" LastSymbolSource="NOC_I_1_RandomWalkTraditional.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Walker" />
-                <Choice Kind="OperationCallFlag" Name="Create" />
-              </p:NodeReference>
-              <Pin Id="VlhSXQHJyGhMb65H74Lhgz" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Node Bounds="541,574,33,22" Id="OshCfMzVOiHPR5H84Huzif">
-              <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="Add" />
-                <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
-              </p:NodeReference>
-              <Pin Id="UwyuIpSDxfXLs89bOhaKap" Name="Input" Kind="StateInputPin" />
-              <Pin Id="A5CDYpea3MPNq6FtZYokF2" Name="Item" Kind="InputPin" />
-              <Pin Id="KiXbFrB57f1NTApSocApG7" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Pad Id="Sntn7uPTAF0OtoqeBwFjM1" SlotId="GdbsOCu2LG5NDbkUUcRnYD" Bounds="727,633">
-              <p:ValueBoxSettings />
-            </Pad>
-            <Pad Id="JkoQhfE1OdZNlxr3lp1Qan" Bounds="712,418,148,22" ShowValueBox="true" isIOBox="true" Value="&quot;doesn't work - why?&quot;">
-              <p:TypeAnnotation>
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
           </Canvas>
-          <Patch Id="QzxGQFqjENsMraudqDWgtS" Name="Create" ParticipatingElements="FEzfyFw08bMMzLqmZwHEJg,HcwWCsvlvPcQOYTmZc2W08,OshCfMzVOiHPR5H84Huzif" />
+          <Patch Id="QzxGQFqjENsMraudqDWgtS" Name="Create" ParticipatingElements="IxEUmg71VajMcLQ4ERMDTX" />
           <Patch Id="JSUy0O8nrYLLurOdhUNBJ4" Name="Update">
             <Pin Id="FptGe21CpKzOlq96TP0E5P" Name="Emit" Kind="InputPin" Bounds="292,276" />
             <Pin Id="T1htfSPerOzLV9XMX4YH3r" Name="Reset" Kind="InputPin" Bounds="469,232" />
@@ -679,10 +649,7 @@
           <Link Id="B7O1xPwK4T6OeX3PoHAtCk" Ids="SeImUsUYesoOSu1OzryzHw,SzMlILVSUZQMD9rf27pqMY" />
           <Link Id="FEzfyFw08bMMzLqmZwHEJg" Ids="IpYKXHHsv8XNSN9hIwgyu4,QsuHLDCSJC9MYo7QesnyEQ" />
           <Link Id="DyXJG6XHi0yQBP3jQ2Uk7T" Ids="KqckHAYxeZEPOC4FqonQSA,NjEYkZArUiuMhFN2qHA63e" />
-          <Link Id="DZ8Im3hRDQ4MLAdvEqiJ5Y" Ids="VlhSXQHJyGhMb65H74Lhgz,A5CDYpea3MPNq6FtZYokF2" />
-          <Slot Id="GdbsOCu2LG5NDbkUUcRnYD" Name="walker" />
-          <Link Id="NvUXhiuqOpOMmmz1e1Bm5D" Ids="KiXbFrB57f1NTApSocApG7,G4egLatneTaPARznUWIrPE" />
-          <Link Id="GH21cSuJFzGLFD35QvGUig" Ids="SzMlILVSUZQMD9rf27pqMY,Sntn7uPTAF0OtoqeBwFjM1" />
+          <Link Id="IxEUmg71VajMcLQ4ERMDTX" Ids="SzMlILVSUZQMD9rf27pqMY,G4egLatneTaPARznUWIrPE" />
         </Patch>
       </Node>
       <!--
@@ -784,4 +751,5 @@
   <NugetDependency Id="UchhPVzlF3yLYZisdOQYdP" Location="VL.CoreLib" Version="0.93.21-g99c25bebaf" />
   <NugetDependency Id="SYpjGF1TdHJPzittw0OMRf" Location="VL.CoreLib.VVVV" Version="0.93.21-g99c25bebaf" />
   <NugetDependency Id="NfMc81IbmnwMkGIoGsIoXq" Location="VL.Skia" Version="0.93.22-g20b1dd0a01" />
+  <NugetDependency Id="QjQamYl6acTNsAs0OWW0it" Location="VL.Lang" Version="0.93.21-g99c25bebaf" />
 </Document>
